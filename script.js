@@ -120,7 +120,13 @@ user.getAge();
 
 */
 
+const sum = function(a, b){
+    console.log( a + b);
+    console.log(arguments);
+    console.log(typeof(arguments));
+}
 
+sum(10, 20);
 
 
 
