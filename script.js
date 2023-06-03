@@ -52,6 +52,8 @@ const f = user.getAge;
 
 */
 
+/*
+
 const user = {
     name: "Dima",
     birthYear: 1999,
@@ -66,3 +68,59 @@ const user = {
 user.getAge();
 user.sayHello();
 //console.log(this.name);
+
+*/
+
+/*
+
+const user = {
+    name: "Dima",
+    birthYear: 1999,
+    getAge: function(){
+
+        const self = this;
+        console.log(self);
+
+        /*
+
+        const isAdult = function() {
+            console.log(2023 - this.birthYear > 18);
+        }
+
+        */
+
+        /*
+        const isAdult = function() {
+            console.log((2023 - self.birthYear) >= 18);
+        }
+
+        isAdult();
+    }
+}
+
+user.getAge();
+
+*/
+
+/*
+
+const user = {
+    name: "Dima",
+    birthYear: 1999,
+    getAge: function(){
+
+      const isAdult = () => {
+        console.log((2023 - this.birthYear) >= 18);
+      }
+      isAdult();
+    }
+}
+
+user.getAge();
+
+*/
+
+
+
+
+
